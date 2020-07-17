@@ -15,10 +15,10 @@ mongoose.connect(process.env.MONGODB_URI ||'mongodb://localhost:27017/portafolio
         
         //Creacion del servidor
 
-        app.listen(process.env.PORT || 8080, function () {
-            var port = server.address().port;
+        app.listen(process.env.PORT || 8080
     
-})
+)
+console.log('server running');
     })
     .catch(err=> console.log(err))
 
